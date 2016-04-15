@@ -1,0 +1,15 @@
+curl commands:
+
+Post new user:
+curl -H "Content-Type: application/json" -X POST -d "{\"firstName\":\"Nimisha\",\"lastName\":\"Srinivasa\",\"displayName\":\"ABC\",\"emailId\":\"nimisha@mail.com\"}" http://tune-in-1205.appspot.com/rest/users
+
+get users: (replace the {user_id} with the response of the POST new user command)
+curl -H "Accept: application/json" -X GET http://tune-in-1205.appspot.com/rest/users/{user_id}
+
+
+
+
+
+
+
+curl -H "Accept: application/json" -X GET http://tune-in-1205.appspot.com/rest/users/ag5zfnR1bmUtaW4tMTIwNXIRCxIEVXNlchiAgICAr-G5Cww
